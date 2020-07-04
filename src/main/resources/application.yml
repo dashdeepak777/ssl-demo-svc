@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-app
+server:
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:keystore/demoapp.p12
+    key-store-password: deepak@321
+    key-alias: demoapp
+    trust-store: classpath:keystore/demoapp.p12
+    trust-store-password: deepak@321
